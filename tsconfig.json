@@ -8,7 +8,6 @@
   ],
   "files": [
     "rotating-file-stream.d.ts",
-    "test.ts",
     "typings/browser.d.ts",
     "typings/browser/ambient/node/node.d.ts",
     "typings/main.d.ts",

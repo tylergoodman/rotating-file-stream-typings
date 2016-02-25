@@ -1,6 +1,6 @@
 import { EventEmitter } from 'events';
 
-declare function rfs(filename: string | ((time: Date, index: number) => string), options: rfs.RotatingFileStreamOptions): rfs.RotatingFileStream;
+declare function rfs(filename: string | ((time: Date, index: number) => string), options?: rfs.RotatingFileStreamOptions): rfs.RotatingFileStream;
 
 declare module rfs {
   interface RotatingFileStreamOptions {
@@ -12,7 +12,7 @@ declare module rfs {
     mode?: number;
   }
   export interface RotatingFileStream extends EventEmitter {
-    new(filename: string | ((time: Date, index: number) => string), options: RotatingFileStreamOptions): RotatingFileStream;
+    new(filename: string | ((time: Date, index: number) => string), options?: RotatingFileStreamOptions): RotatingFileStream;
   }
 }
 
