@@ -1,4 +1,4 @@
-import { EventEmitter } from 'events';
+import { Writable } from 'stream';
 
 declare function rfs(filename: string | ((time: Date, index: number) => string), options?: rfs.RotatingFileStreamOptions): rfs.RotatingFileStream;
 
@@ -11,7 +11,7 @@ declare module rfs {
     highWaterMark?: number;
     mode?: number;
   }
-  export interface RotatingFileStream extends EventEmitter {
+  export interface RotatingFileStream extends Writable {
     new(filename: string | ((time: Date, index: number) => string), options?: RotatingFileStreamOptions): RotatingFileStream;
   }
 }
