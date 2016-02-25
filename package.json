@@ -1,0 +1,17 @@
+{
+  "name": "rotating-file-stream-typings",
+  "version": "0.0.1",
+  "description": "The type definition for rotating-file-stream",
+  "main": " ",
+  "keywords": [
+    "typings"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylergoodman/rotating-file-stream-typings.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tylergoodman/rotating-file-stream-typings/issues"
+  },
+  "homepage": "https://github.com/tylergoodman/rotating-file-stream-typings#readme"
+}
