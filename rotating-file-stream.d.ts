@@ -3,7 +3,7 @@ import { EventEmitter } from 'events';
 declare function rfs(filename: string | ((time: Date, index: number) => string), options: rfs.RotatingFileStreamOptions): rfs.RotatingFileStream;
 
 declare module rfs {
-  export interface RotatingFileStreamOptions {
+  interface RotatingFileStreamOptions {
     compress?: string | boolean | ((source: string, dest: string) => string);
     interval?: string;
     path?: string;
